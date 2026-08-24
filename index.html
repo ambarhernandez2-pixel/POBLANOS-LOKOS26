@@ -178,6 +178,67 @@
     </footer>
 
   </div>
+<style>
+.floating-img {
+  position: fixed;
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  padding: 6px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,.35);
+  z-index: 999;
+  animation: flotar 5s ease-in-out infinite;
+  pointer-events: none;
+}
 
+.f1 {
+  left: 3%;
+  top: 20%;
+  transform: rotate(-8deg);
+}
+
+.f2 {
+  right: 3%;
+  top: 30%;
+  transform: rotate(8deg);
+  animation-delay: 1s;
+}
+
+.f3 {
+  left: 5%;
+  bottom: 12%;
+  transform: rotate(6deg);
+  animation-delay: 2s;
+}
+
+.f4 {
+  right: 5%;
+  bottom: 10%;
+  transform: rotate(-7deg);
+  animation-delay: 3s;
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(-5deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .floating-img {
+    width: 65px;
+    height: 80px;
+  }
+}
+</style>
+  <div class="floating-gallery">
+  <img src="IMG_1828.jpeg" class="floating-img f1">
+  <img src="IMG_1827.jpeg" class="floating-img f2">
+  <img src="IMG_1826.jpeg" class="floating-img f3">
+</div>
 </body>
 </html>
