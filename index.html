@@ -182,34 +182,75 @@
     </footer>
 
   </div>
-<div class="footer-lokos">
+  <style>
+/* ===== FOTOS POBLANOS LOKOS ===== */
 
-  <h2 class="footer-title">
-    POBLANOS LOKOS
-  </h2>
+.fotos-lokos {
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px;
+  margin: 25px auto 30px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
 
-  <p class="footer-subtitle">
-    URBAN • STYLE • QUALITY
-  </p>
+.fotos-lokos img {
+  width: 85px !important;
+  height: 105px !important;
+  min-width: 85px !important;
+  max-width: 85px !important;
+  object-fit: cover !important;
 
-  <div class="footer-gallery">
+  background: white;
+  padding: 6px;
+  box-sizing: border-box;
 
-    <img src="IMG_1826.jpeg" class="footer-photo">
+  border: 2px solid #111;
+  box-shadow: 0 7px 18px rgba(0,0,0,.45);
 
-    <img src="IMG_1827.jpeg" class="footer-photo">
+  animation: fotosFlotan 4s ease-in-out infinite;
+}
 
-    <img src="IMG_1828.jpeg" class="footer-photo">
+.fotos-lokos img:nth-child(1) {
+  transform: rotate(-9deg);
+}
 
-  </div>
+.fotos-lokos img:nth-child(2) {
+  transform: translateY(-8px) rotate(1deg);
+  animation-delay: .6s;
+}
 
-  <div class="footer-location">
-    PUEBLA • MÉXICO
-  </div>
+.fotos-lokos img:nth-child(3) {
+  transform: rotate(9deg);
+  animation-delay: 1.2s;
+}
 
-  <div class="footer-copy">
-    © 2026 POBLANOS LOKOS
-  </div>
+@keyframes fotosFlotan {
+  0%, 100% {
+    margin-top: 0;
+  }
 
+  50% {
+    margin-top: -6px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+  .fotos-lokos img {
+    width: 75px !important;
+    height: 95px !important;
+    min-width: 75px !important;
+    max-width: 75px !important;
+  }
+
+  .fotos-lokos {
+    gap: 6px;
+  }
+}
+</style>
 </div>
   <div class="floating-gallery">
   <img src="IMG_1828.jpeg" class="floating-img f1">
