@@ -11,7 +11,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: bebas neue, Bebas Neue;
+      font-family: blacklisted, Bebas Neue;
     }
 
     body {
@@ -41,7 +41,7 @@
 
     /* NOMBRE */
     h1 {
-      font-size: 26px;
+      font-size: 30px;
       margin-bottom: 7px;
       color: #111;
     }
@@ -124,7 +124,11 @@
     <img src="logo.jpg.jpg" class="logo" alt="Logo">
 
     <!-- NOMBRE DE LA TIENDA -->
-    <h1>POBLANOS LOKOS</h1>
+    <h1 class="titulo-poblanos">
+  POBLANOS<br>
+  <span>LOKOS</span>
+</h1>
+
 
     <p class="description">
       URBAN • STYLE • QUALITY
@@ -178,63 +182,35 @@
     </footer>
 
   </div>
-<style>
-.floating-img {
-  position: fixed;
-  width: 100px;
-  height: 120px;
-  object-fit: cover;
-  padding: 6px;
-  background: white;
-  box-shadow: 0 8px 25px rgba(0,0,0,.35);
-  z-index: 999;
-  animation: flotar 5s ease-in-out infinite;
-  pointer-events: none;
-}
+<div class="footer-lokos">
 
-.f1 {
-  left: 3%;
-  top: 20%;
-  transform: rotate(-8deg);
-}
+  <h2 class="footer-title">
+    POBLANOS LOKOS
+  </h2>
 
-.f2 {
-  right: 3%;
-  top: 30%;
-  transform: rotate(8deg);
-  animation-delay: 1s;
-}
+  <p class="footer-subtitle">
+    URBAN • STYLE • QUALITY
+  </p>
 
-.f3 {
-  left: 5%;
-  bottom: 12%;
-  transform: rotate(6deg);
-  animation-delay: 2s;
-}
+  <div class="footer-gallery">
 
-.f4 {
-  right: 5%;
-  bottom: 10%;
-  transform: rotate(-7deg);
-  animation-delay: 3s;
-}
+    <img src="IMG_1826.jpeg" class="footer-photo">
 
-@keyframes flotar {
-  0%, 100% {
-    transform: translateY(0) rotate(-8deg);
-  }
-  50% {
-    transform: translateY(-18px) rotate(-5deg);
-  }
-}
+    <img src="IMG_1827.jpeg" class="footer-photo">
 
-@media (max-width: 600px) {
-  .floating-img {
-    width: 65px;
-    height: 80px;
-  }
-}
-</style>
+    <img src="IMG_1828.jpeg" class="footer-photo">
+
+  </div>
+
+  <div class="footer-location">
+    PUEBLA • MÉXICO
+  </div>
+
+  <div class="footer-copy">
+    © 2026 POBLANOS LOKOS
+  </div>
+
+</div>
   <div class="floating-gallery">
   <img src="IMG_1828.jpeg" class="floating-img f1">
   <img src="IMG_1827.jpeg" class="floating-img f2">
